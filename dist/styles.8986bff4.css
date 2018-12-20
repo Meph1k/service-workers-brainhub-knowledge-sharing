@@ -1,0 +1,87 @@
+body {
+    background-color: #dae0e6;
+    font-family: "American Typewriter";
+}
+
+#characters-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line-clamp {
+    line-height: 30px;
+}
+
+#kitty-picture-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+.character-element-container {
+    cursor: pointer;
+}
+
+.character-element-container, .character-modal-container {
+    max-width: 600px;
+    height: 550px;
+    text-align: center;
+}
+
+.character-modal-container {
+    height: 650px;
+}
+
+.character-element__image-container, .character-modal__image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.character-element__title, .character-modal__title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.character-modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+}
+
+.trait-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+
+.trait-name, .trait-value {
+
+}
